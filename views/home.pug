@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+  script(src='/static/Index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection
+            div Welcome to Steve's Dance Academy 
+            div.small Esctacy You Must Feel 
+
+    section#missionSection
+            h2 Our mission
+            div.card
+                h3 Dance Perfection
+                div.card-box 
+                    div.card-img
+                        img(src="/static/DWLOGO1.png", alt="pic1")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Dance the way you like
+                div.card-box 
+                    div.card-img
+                        img(src="/static/DWLOGO3.png", alt="pic2")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Expert Teaching
+                div.card-box 
+                    div.card-img
+                        img(src="/static/DWLOGO4.png", alt="pic3")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+    section#sponsorsSection
+            h2 Our Sponsors
+            div#sponsors
+            img(src="/static/logo1.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/logo2.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/logo3.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/logo4.png", alt="Sponsor Image", class="spImage")

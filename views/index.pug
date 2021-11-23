@@ -1,0 +1,60 @@
+doctype html
+html
+    head 
+        title Steve Dance Academy 
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar 
+            ul 
+                div#logo
+                    img(src="/static/DWLOGO5.png")
+                    | SDA
+                li #[a(href "/") Home]
+                li #[a(href "/") About]
+                li #[a(href "/") Services]
+                li #[a(href "/") Class Info]
+                li #[a(href "/") Contact Us]
+
+        section#introSection
+                div Welcome to Steve's Dance Academy 
+                div.small Esctacy You Must Feel 
+
+        section#missionSection
+                h2 Our mission
+                div.card
+                    h3 Dance Perfection
+                    div.card-box 
+                        div.card-img
+                            img(src="/static/DWLOGO1.png", alt="pic1")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+                div.card
+                    h3 Dance the way you like
+                    div.card-box 
+                        div.card-img
+                            img(src="/static/DWLOGO3.png", alt="pic2")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+                div.card
+                    h3 Expert Teaching
+                    div.card-box 
+                        div.card-img
+                            img(src="/static/DWLOGO4.png", alt="pic3")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+        section#sponsorsSection
+                h2 Our Sponsors
+                div#sponsors
+                img(src="/static/logo1.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/logo2.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/logo3.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/logo4.png", alt="Sponsor Image", class="spImage")
+
+        footer#footer 
+                | Copyright © 2021 SteveDanceAcademy.com | All Rights Reserved
+        script  
+            include ../static/Index.js
